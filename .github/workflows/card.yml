@@ -11,6 +11,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: card
+  cancel-in-progress: false
+
 jobs:
   card:
     runs-on: ubuntu-latest
